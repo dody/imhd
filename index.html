@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>imhd 2025</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body,
+    html {
+      height: 100%;
+      width: 100%;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+      width: 100%;
+    }
+
+    .box {
+      flex: 1 0 50%;
+      /* Default: 2 columns */
+      height: 50%;
+    }
+
+    .box iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+      /* IMPORTANT: eliminates inline spacing */
+    }
+
+    .box1 {
+      background-color: lightcoral;
+    }
+
+    .box2 {
+      background-color: lightblue;
+    }
+
+    .box3 {
+      background-color: lightgreen;
+    }
+
+    .box4 {
+      background-color: lightgoldenrodyellow;
+    }
+
+    @media (orientation: landscape) {
+      .box {
+        flex: 1 0 25%;
+        /* 4 columns */
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="box box1">
+      <!-- svabinskeho 375-->
+      <iframe
+        src="https://imhd.sk/ba/online-zastavkova-tabula?st=375&zoom=115&nthDisplay=1&showClock=0&showInfoText=0"></iframe>
+    </div>
+
+    <div class="box box2">
+      <!-- Prokofievova 471-->
+      <iframe
+        src="https://imhd.sk/ba/online-zastavkova-tabula?st=471&zoom=115&nthDisplay=1&showClock=0&showInfoText=0"></iframe>
+    </div>
+
+    <div class="box box3">
+      <!-- kosicka -->
+      <iframe
+        src="https://imhd.sk/ba/online-zastavkova-tabula?st=144&zoom=115&nthDisplay=1&showClock=0&showInfoText=0"></iframe>
+    </div>
+
+    <div class="box box4">
+      <!-- Prístavný most -->
+      <iframe
+        src="https://imhd.sk/ba/online-zastavkova-tabula?st=295&zoom=115&nthDisplay=1&showClock=0&showInfoText=0"></iframe>
+    </div>
+
+
+  </div>
+</body>
+
+</html>
